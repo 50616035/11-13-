@@ -20,13 +20,13 @@ public class Differencial_lib implements Differencial_if{
 		// TODO Auto-generated method stub
 		return 2*this.a;
 	}
+	@SuppressWarnings("null")
 	public double getAnswer() {
-		double D = ((Math.pow(this.a+this.h, 2)-Math.pow(this.a, 2))/this.h);
+		double H = this.h;
+		double D = ((Math.pow(this.a+H, 2)-Math.pow(this.a, 2))/H);
 		double R = getRX();
-		
-		
-		return Math.abs(R-D)/R*100;
-		}
-	
-
+		int i =0,j =0;
+		double a[] = null;
+			return Math.abs(R-D)/R*100;
+			}
 }
